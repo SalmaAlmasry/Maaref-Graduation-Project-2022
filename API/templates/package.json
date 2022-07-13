@@ -1,0 +1,10 @@
+{
+  "name": "Form-in-Bootstrap-3",
+  "description": "Form in Bootstrap 3",
+  "author": "trycrmr",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": ">= 4.x",
+    "body-parser": ">= 1.x"
+  }
+}

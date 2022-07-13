@@ -1,0 +1,127 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  .center_x{
+   margin-top:8% ;
+   margin-left:25% ;
+  }
+  .answer{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1%;
+
+
+   margin:  5%;
+   background-color:lightyellow;
+   color: #3f3f3f;
+  
+  }
+</style>
+ 
+</head>
+<body style="background-color: #eee">
+  <!--Button to show the modal when clicked-->
+  <div class="center_x">
+  <button type="button" style="height:30% ; width:30%; margin: 1%;" class="btn btn-primary" data-toggle="modal" data-target="#knowledge">
+   <h3> أسئلة خاصة بالقرأن الكريم</h3>
+  </button>
+  <button type="button" style="height:30% ; width:30%; margin: 1%;"  class="btn btn-warning" data-toggle="modal" data-target="#rule">
+   <h3> أسئلة خاصة  بالفتاوي </h3> </button>
+</div>
+  <!--The modal with the form on it-->
+  <div class="modal fade" id="knowledge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--Close button in top right-->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         
+        </div>
+
+        <div class="modal-body">
+          <!--Form-->
+          <form method="post"  action = "http://127.0.0.1:5000/dashboard/knowledge" >
+            <div class="form-group">
+              <label for="text">question</label>
+              <input type = "text" name = "question" class="form-control" >
+             
+              <label for="text">context</label>
+              <textarea v-model="message" type = "text" class="form-control" name = "context"></textarea>
+              
+            </div>
+            <!--Submit button-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+     
+        <div class="modal-footer">
+          <!--Another close button in the footer-->
+          <a href="#" class="btn" type="close" data-dismiss="modal">Close</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="modal fade" id="rule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--Close button in top right-->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       
+        </div>
+
+        <div class="modal-body">
+          <!--Form-->
+          <form method="post"  action = "http://127.0.0.1:5000/dashboard/rule" >
+            <div class="form-group">
+              <label for="text">question</label>
+              <input type = "text" name = "question" class="form-control" >
+             
+           
+            </div>
+            <!--Submit button-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+     
+     
+        <div class="modal-footer">
+          <!--Another close button in the footer-->
+          <a href="#" class="btn" type="close" data-dismiss="modal">Close</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+ 
+ 
+<div class="card answer" id="answer" style=" max-width: 40em; padding:50px ;  left: 12%;">
+ <h2>answer</h2>
+ <br>
+    <p class="card-text">
+      {{answerKnowledg_v}} </p>
+   
+  </div>
+</div>
+ 
+</body>
