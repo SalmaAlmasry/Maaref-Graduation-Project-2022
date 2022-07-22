@@ -1,6 +1,6 @@
 # Maaref-Graduation-Project-2022
 
-Ma'aref" an Arabic Question Answering on Quran and Fatwa, it consists of two parts.
+Ma'aref is an Arabic Question Answering on Quran and Fatwa, it consists of two parts.
 
 The first part helps people to find an instant answer to their questions in the Islamic religion using Fatwa that are collected from valuable resources.
 
