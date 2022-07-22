@@ -10,13 +10,12 @@ It is an honor to mention that we worked on the "OSACT" Qur'an QA competition, a
 
 you can find all details in documentation and presentation here: https://github.com/SalmaAlmasry/Maaref-Graduation-Project-2022/tree/main/Documentation
 
-The rule based code (model and scrapping) can be found here: https://github.com/Dalia-Mahmoud-ElSayes/Gp-2022-ma3aref-Arabic-QA/tree/master/Rule%20based
+The rule based code (model and scrapping) can be found here: https://github.com/SalmaAlmasry/Maaref-Graduation-Project-2022/tree/main/Rule%20based
+
+The MT5 model can be found here: https://github.com/SalmaAlmasry/Maaref-Graduation-Project-2022/tree/main/MT5
 
 The models of Araelectra and Arabert before and after augmentation are uploaded here: https://github.com/Dalia-Mahmoud-ElSayes/Gp-2022-ma3aref-Arabic-QA/tree/master/AraElectra%20and%20AraBert
 
-Codes for MT5, AraElectra and Arabert are here: https://github.com/Dalia-Mahmoud-ElSayes/Gp-2022-ma3aref-Arabic-QA/tree/master/Knowledge
+Additional codes for MT5, AraElectra and Arabert are here: https://github.com/SalmaAlmasry/Maaref-Graduation-Project-2022/tree/main/Knowledge
 
-always take care of paths in codes
-
-You can read all about it in the documentation which can be found here:
-https://github.com/SalmaAlmasry/Maaref-Graduation-Project-2022/tree/main/Documentation
+always take care of paths in codes.
